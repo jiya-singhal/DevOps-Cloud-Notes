@@ -16,7 +16,7 @@
 * Handles authentication, rate limiting, caching, etc.
 * Examples → AWS API Gateway, Kong, Nginx.
 
-➡️ Analogy: It’s like a receptionist who knows which department (microservice) handles what.
+**Analogy: It’s like a receptionist who knows which department (microservice) handles what.**
 
 ---
 
@@ -36,7 +36,7 @@
 
 * Cloud tools: AWS Route 53, Cloudflare, Azure DNS.
 
-➡️ Analogy: Like saving your friend’s name in your phone instead of their number.
+**Analogy: Like saving your friend’s name in your phone instead of their number.**
 
 * **Load Balancer:** Distributes incoming traffic evenly.
 * Ensures high availability and no downtime even if one instance fails.
@@ -49,7 +49,7 @@ Types:
     * Sticky sessions
     * Auto-scaling integration
 
-➡️ Analogy: Like a traffic cop sending cars to different lanes to avoid jams.
+**Analogy: Like a traffic cop sending cars to different lanes to avoid jams.**
 
 ---
 
@@ -61,7 +61,7 @@ Types:
 * **NoSQL (Flexible):** MongoDB, Cassandra → good for scalability.
 * Can use both = Polyglot Persistence.
 
-➡️ Example: Payments service may use SQL for transactions; Logging service may use NoSQL for high volume data.
+**Example: Payments service may use SQL for transactions; Logging service may use NoSQL for high volume data.**
 
 ---
 
@@ -74,7 +74,7 @@ Types:
 * Good for: Real-time actions (e.g., login).
 * Drawback: Tight coupling – if one service fails, others may wait.
 
-➡️ Example: “Hey Payment, did the transaction succeed?” → waits → gets response.
+**Example: “Hey Payment, did the transaction succeed?” → waits → gets response.**
 
 ### B. Asynchronous (Event-Based)
 
@@ -86,7 +86,7 @@ Types:
 * Drawback: Slight delay, eventual consistency (data syncs later).
 * Works well for high-volume systems.
 
-➡️ Example: “Hey Notification, send email when you can” → continues doing other work.
+**Example: “Hey Notification, send email when you can” → continues doing other work.**
 
 ---
 
@@ -98,7 +98,7 @@ Types:
 * Ensures messages are not lost.
 * Examples →Kafka, RabbitMQ, AWS SQS.
 
-➡️ Analogy: Like a post office holding your letter until the receiver is ready.
+**Analogy: Like a post office holding your letter until the receiver is ready.**
 
 ---
 
@@ -110,7 +110,7 @@ Types:
 * Ensures eventual consistency between services.
 * Examples: Kafka, NATS.
 
-➡️ Analogy: Like a group chat — anyone can post an event, and whoever cares reacts.
+**Analogy: Like a group chat — anyone can post an event, and whoever cares reacts.**
 
 ---
 
@@ -142,8 +142,7 @@ Types:
 * Cloud tools: AWS CloudWatch, Dynatrace.
 * Gives one place to see all logs and debug easily.
 
-➡️ Analogy: Like having all CCTV cameras feed into one big screen.
-
+**Analogy: Like having all CCTV cameras feed into one big screen.**
 ---
 
 ### Monitoring & Tracing
@@ -153,7 +152,7 @@ Types:
 * Tracing: Follows a request’s path through all services (helps debug slow points).
 * Tools → Prometheus (metrics), Grafana (dashboards), Jaeger (tracing).
 
-➡️ Analogy: Like a fitness tracker for your services.
+**Analogy: Like a fitness tracker for your services.**
 
 ---
 
