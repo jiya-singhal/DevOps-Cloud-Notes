@@ -14,11 +14,11 @@
 
 Without DevOps:
 
-* Dev team writes code → sends to Ops → deployment fails → long bug cycles.
+* Developers write code → send to Operations → it fails to run → long delays fixing bugs → angry users.
 
 With DevOps:
 
-* Code is pushed → automated CI/CD pipeline tests and deploys → faster, reliable release.
+* Developers push code → automated pipeline tests it → deploys automatically → quick and smooth release.
 
 ---
 
@@ -26,7 +26,7 @@ With DevOps:
 
 1. **Faster Delivery:**
    → Reduces release time from months to days or hours.
-   → Example: Weekly feature updates instead of quarterly.
+   → Example: Netflix or Amazon can push new features every week!
 
 2. **Better Collaboration:**
    → Dev and Ops share work and tools.
@@ -67,6 +67,9 @@ With DevOps:
 **Build Tools:**
 → package.json, pom.xml, Dockerfile
 
+**Problem:**
+If a bug was found late (like during deployment), it was very expensive to fix.
+This led to the Shift Left idea (explained below).
 ---
 
 ## DEVOPS LIFECYCLE (CONTINUOUS)
