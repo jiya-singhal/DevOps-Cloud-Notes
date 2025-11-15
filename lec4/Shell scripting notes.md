@@ -2,7 +2,7 @@
 
 ---
 
-## BASIC LINUX COMMANDS (RECAP)
+## BASIC LINUX COMMANDS
 
 | Command       | Purpose                                    | Example                  |
 | ------------- | ------------------------------------------ | ------------------------ |
@@ -45,8 +45,6 @@ Scripts are written in plain text and executed by the shell (usually bash).
 File: `hello.sh`
 
 ```bash
-#!/bin/bash
-# This is a simple shell script
 echo "Hello, World!"
 ```
 
@@ -78,28 +76,24 @@ echo "Hello, World!"
 **a. Show current date and time**
 
 ```bash
-#!/bin/bash
 echo "Current date and time: $(date)"
 ```
 
 **b. Check disk usage**
 
 ```bash
-#!/bin/bash
 df -h
 ```
 
 **c. List files**
 
 ```bash
-#!/bin/bash
 ls -l
 ```
 
 **d. Check if file exists**
 
 ```bash
-#!/bin/bash
 read -p "Enter filename: " file
 if [ -f "$file" ]; then
   echo "File exists."
@@ -111,7 +105,6 @@ fi
 **e. Add two numbers**
 
 ```bash
-#!/bin/bash
 read -p "Enter first number: " a
 read -p "Enter second number: " b
 echo "Sum: $((a+b))"
@@ -120,14 +113,12 @@ echo "Sum: $((a+b))"
 **f. System uptime**
 
 ```bash
-#!/bin/bash
 uptime -p
 ```
 
 **g. Check if user exists**
 
 ```bash
-#!/bin/bash
 read -p "Enter username: " user
 if id "$user" &>/dev/null; then
   echo "User exists."
@@ -139,7 +130,6 @@ fi
 **h. Backup a directory**
 
 ```bash
-#!/bin/bash
 read -p "Enter source dir: " src
 read -p "Enter backup dir: " dest
 tar -czf "$dest/backup_$(date +%F).tar.gz" "$src"
@@ -149,7 +139,6 @@ echo "Backup completed!"
 **i. Check internet connectivity**
 
 ```bash
-#!/bin/bash
 if ping -c 1 8.8.8.8 &>/dev/null; then
   echo "Internet is working."
 else
@@ -217,7 +206,6 @@ echo "Substring: ${str:$pos:$len}"
 ### Non-standard (basic)
 
 ```bash
-#!/bin/bash
 USERNAME="$1"
 GROUPNAME="$2"
 
@@ -401,7 +389,6 @@ setfacl -m m::r-- file.txt
 ## SCRIPT EXAMPLE – GIVE TEAM ACCESS
 
 ```bash
-#!/bin/bash
 SHARE_DIR="/data/team"
 USER_LIST="alice bob charlie"
 
