@@ -1,8 +1,11 @@
 # Microservices – Overview
 
 → Microservices = breaking one big (monolithic) app into small, independent parts.
+
 → Each service does one job only – like Auth, Payments, Orders, etc.
+
 → They communicate using APIs.
+
 → Easier to scale, update, and deploy independently.
 
 ---
